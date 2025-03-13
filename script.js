@@ -9,17 +9,40 @@
 
 
 // Problem 2
-let isEven = (number) => {
-    if (number % 2 === 0)
+// let isEven = (number) => {
+//     if (number % 2 === 0)
+//     {
+//         return true;
+//     }
+
+//     else
+//     {
+//         return false;
+//     }
+// }
+
+// console.log(isEven(10));
+// console.log(isEven(7));
+
+
+// Problem 3
+let numbers = [10, 20, 30, 40, 50, 99, 100];
+
+
+function findMax(numbers)
+{
+    let maxNum = 0;
+
+    for (let number of numbers) 
     {
-        return true;
+        if(number > maxNum)
+        {
+            maxNum = number;
+        }
     }
 
-    else
-    {
-        return false;
-    }
+    return maxNum;
+
 }
 
-console.log(isEven(10));
-console.log(isEven(7));
+console.log(findMax(numbers));
