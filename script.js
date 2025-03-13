@@ -70,20 +70,41 @@
 
 
 // Problem 5
-function countWords(str) 
+// function countWords(str) 
+// {
+//     let count = 0;
+
+//     let charArray = Array.from(str);
+
+//     for(let i=1; i<=charArray.length; i++)
+//     {
+//         count++;
+//     }
+
+//     return count;
+// }
+
+// console.log(countWords("Hello")); 
+// console.log(countWords("Bangladesh")); 
+// console.log(countWords("JavaScript")); 
+
+
+// Problem 6
+let Arr = [2, 5, 4, 2, 8, 12, 5, 8, 18, 12, 22, 56]
+
+function removeDuplicates(Arr) 
 {
-    let count = 0;
+    let arrWithoutDuplicates = [];
 
-    let charArray = Array.from(str);
-
-    for(let i=1; i<=charArray.length; i++)
+    for(item of Arr)
     {
-        count++;
+        if(!arrWithoutDuplicates.includes(item))
+        {
+            arrWithoutDuplicates.push(item);
+        }
     }
 
-    return count;
+    return arrWithoutDuplicates;
 }
 
-console.log(countWords("Hello")); 
-console.log(countWords("Bangladesh")); 
-console.log(countWords("JavaScript")); 
+console.log(removeDuplicates(Arr));
