@@ -49,21 +49,41 @@
 
 
 // Problem 4
-let numArr = [4, 2, 5, 6, 1, 9, 15, 24, 23, 17];
+// let numArr = [4, 2, 5, 6, 1, 9, 15, 24, 23, 17];
 
 
-let filterOddNumbers = (numberArray) => {
-    let oddNumArr = [];
+// let filterOddNumbers = (numberArray) => {
+//     let oddNumArr = [];
 
-    for(num of numberArray)
+//     for(num of numberArray)
+//     {
+//         if(num % 2 !== 0)
+//         {
+//             oddNumArr.push(num);
+//         }
+//     }
+
+//     return oddNumArr;
+// }
+
+// console.log(filterOddNumbers(numArr));
+
+
+// Problem 5
+function countWords(str) 
+{
+    let count = 0;
+
+    let charArray = Array.from(str);
+
+    for(let i=1; i<=charArray.length; i++)
     {
-        if(num % 2 !== 0)
-        {
-            oddNumArr.push(num);
-        }
+        count++;
     }
 
-    return oddNumArr;
+    return count;
 }
 
-console.log(filterOddNumbers(numArr));
+console.log(countWords("Hello")); 
+console.log(countWords("Bangladesh")); 
+console.log(countWords("JavaScript")); 
