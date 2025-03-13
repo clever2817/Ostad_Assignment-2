@@ -26,23 +26,44 @@
 
 
 // Problem 3
-let numbers = [10, 20, 30, 40, 50, 99, 100];
+// let numbers = [10, 20, 30, 40, 50, 99, 100];
 
 
-function findMax(numbers)
-{
-    let maxNum = 0;
+// function findMax(numbers)
+// {
+//     let maxNum = 0;
 
-    for (let number of numbers) 
+//     for (let number of numbers) 
+//     {
+//         if(number > maxNum)
+//         {
+//             maxNum = number;
+//         }
+//     }
+
+//     return maxNum;
+
+// }
+
+// console.log(findMax(numbers));
+
+
+// Problem 4
+let numArr = [4, 2, 5, 6, 1, 9, 15, 24, 23, 17];
+
+
+let filterOddNumbers = (numberArray) => {
+    let oddNumArr = [];
+
+    for(num of numberArray)
     {
-        if(number > maxNum)
+        if(num % 2 !== 0)
         {
-            maxNum = number;
+            oddNumArr.push(num);
         }
     }
 
-    return maxNum;
-
+    return oddNumArr;
 }
 
-console.log(findMax(numbers));
+console.log(filterOddNumbers(numArr));
